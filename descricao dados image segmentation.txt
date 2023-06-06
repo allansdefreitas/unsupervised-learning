@@ -1,0 +1,48 @@
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3cm} X}
+    \textbf{Variável} & \textbf{Descrição} \\
+    \hline
+    region-centroid-col & Coluna do pixel central da região. \\
+    gender & 0 (desconhecido), 1 (masculino), 2 (feminino). \\
+    C\_api & Gênero extraído da API do WikiMedia, codificado como feminino/masculino/desconhecido. \\
+    C\_man & Gênero extraído da codificação de conteúdo, codificado como 1 (masculino) / 2 (feminino) / 3 (desconhecido). \\
+    E\_NEds & Índice I do estrato IJ (0,1,2,3). \\
+    E\_Bpag & Índice J do estrato IJ (0,1,2,3). \\
+    firstDay & Primeira edição na Wikipédia em espanhol (AAAA-MM-DD HH:MM:SS). \\
+    lastDay & Última edição na Wikipédia em espanhol (AAAA-MM-DD HH:MM:SS). \\
+    NEds & Número total de edições. \\
+    NDays & Número de dias (lastDay - firstDay + 1). \\
+    NActDays & Número de dias com edições. \\
+    NPages & Número de páginas diferentes editadas. \\
+    NPcreated & Número de páginas criadas. \\
+    pagesWomen & Número de edições em páginas relacionadas a mulheres. \\
+    wikiprojWomen & Número de edições em WikiProjects relacionados a mulheres. \\
+    ns\_user & Número de edições no namespace do usuário. \\
+    ns\_wikipedia & Número de edições no namespace do Wikipedia. \\
+    ns\_talk & Número de edições no namespace de discussão. \\
+    ns\_userTalk & Número de edições no namespace de discussão do usuário. \\
+    ns\_content & Número de edições em páginas de conteúdo. \\
+    weightIJ & Peso corrigido para o estrato IJ. \\
+    NIJ & Número de elementos no estrato IJ. \\
+    \hline
+\end{tabularx}
+
+
+1. region-centroid-col: the column of the center pixel of the region.
+2. region-centroid-row: the row of the center pixel of the region.
+3. region-pixel-count: the number of pixels in a region = 9.
+4. short-line-density-5: the results of a line extractoin algorithm that counts how many lines of length 5 (any orientation) with low contrast, less than or equal to 5, go through the region.
+5. short-line-density-2: same as short-line-density-5 but counts lines of high contrast, greater than 5.
+6. vedge-mean: measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute is used as a vertical edge detector.
+7. vegde-sd: (see 6)
+8. hedge-mean: measures the contrast of vertically adjacent pixels. Used for horizontal line detection.
+9. hedge-sd: (see 8).
+10. intensity-mean: the average over the region of (R + G + B)/3
+11. rawred-mean: the average over the region of the R value.
+12. rawblue-mean: the average over the region of the B value.
+13. rawgreen-mean: the average over the region of the G value.
+14. exred-mean: measure the excess red: (2R - (G + B))
+15. exblue-mean: measure the excess blue: (2B - (G + R))
+16. exgreen-mean: measure the excess green: (2G - (R + B))
+17. value-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)
+18. saturatoin-mean: (see 17)
+19. hue-mean: (see 17)

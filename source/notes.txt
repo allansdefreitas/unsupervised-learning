@@ -1,0 +1,35 @@
+Clustering
+
+
+classificação a priori
+
+FUZZY C MEANS ROBUSTO: com distância de city-block
+dois hiperparâmetros: K número de grupos e m (parâmetro de fuzzyficação, que tem que ser > 1)
+no projeto, é pra testar com os m prescritos
+
+
+algoritmo de otimização iterativa
+
+função objetivo. Qual?
+mede a heterogeneidade total, que é a soma das heterogeneidades de cada grupo Pk
+heterogeneidade entre exemplo e1 e protótipo do grupo dele??
+
+K grupos
+
+Matriz de exemplo E {...}
+vetor de exemplos x (...)
+
+matriz de dados X
+
+
+
+
+1. rodar algoritmo colab (OK)
+4. buscar implementações de FCM com city block (OK)
+
+
+1. verificar validade da partition entropy
+4. verificar quem é o parametro T e e. e=erro?. T=maxiter?
+2. verificar como calcular rand index e f1-score
+3. veriifcar validade da função objetivo
+
