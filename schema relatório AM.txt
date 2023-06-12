@@ -1,0 +1,10 @@
+Esquema relatório AM
+
+fuzzy c-means com city-block (OK)
+
+MPC OK
+PE OK
+ARI doing
+F-MEASURE
+
+
