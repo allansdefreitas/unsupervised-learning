@@ -1,10 +1,55 @@
-Esquema relatório AM
+"""
+a matrix de confusão
+da partição crisp versus a partição a priori; OK
 
-fuzzy c-means com city-block (OK)
+tipo:
 
-MPC OK
-PE OK
-ARI doing
-F-MEASURE
+m=1.1
+
+dataset 1 x a priori
+dataset 2 x a priori
+dataset 3 x a priori
+
+tipo:
+
+m=1.6
+
+dataset 1 x a priori
+dataset 2 x a priori
+dataset 3 x a priori
+
+m=2.0
+
+dataset 1 x a priori
+dataset 2 x a priori
+dataset 3 x a priori
+
+"""
 
 
+"""iii) a matrix de confusão de
+uma partição crisp versus a outra;
+
+
+seria algo como:
+dataset 1 m 1.1 vs dataset 1 m 1.1
+dataset 1 m 1.1 vs dataset 1 m 1.6
+dataset 1 m 1.1 vs dataset 1 m 2.0
+dataset 1 m 1.1 vs dataset 2 m 1.1
+dataset 1 m 1.1 vs dataset 1 m 1.6
+....
+dataset 3 m 2.0 vs dataset 3 m 1.1
+dataset 3 m 2.0 vs dataset 3 m 1.6
+dataset 3 m 2.0 vs dataset 3 m 2.0
+"""
+
+
+A gente fez a escolha da melhor partição pra cada dataset
+
+No caso, pro dataset shape, a melhor partição foi 1
+Pro dataset rgb, a melhor partição foi 2
+Pro dataset shape+rgb, a melhor partição foi 3
+
+Então entre as crisp, comparamos: partição 1 com a 2, partição 1 com a 3, partição 2 com a 3
+
+Entre os valores a priori, fizemos partição 1 vs a priori, partição 2 vs a priori, partição 3 vs a priori
